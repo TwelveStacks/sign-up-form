@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
   </head>
   <body>
     <div class="main">
@@ -30,41 +31,46 @@
               <div class="row">
                 <div class="input-container">
                   <label for="first_name">First Name</label>
-                  <input type="text" id="first_name" />
+                  <input type="text" id="first_name" required />
                 </div>
                 <div class="input-container">
                   <label for="last_name">Last Name</label>
-                  <input type="text" id="last_name" />
+                  <input type="text" id="last_name" required />
                 </div>
               </div>
               <div class="row">
                 <div class="input-container">
                   <label for="email">Email</label>
-                  <input type="text" id="email" />
+                  <input type="email" id="email" required />
                 </div>
                 <div class="input-container">
                   <label for="phone_number">Phone Number</label>
-                  <input type="text" id="phone_number" />
+                  <input type="number" id="phone_number" required />
                 </div>
               </div>
               <div class="row">
                 <div class="input-container">
                   <label for="password">Password</label>
-                  <input type="text" id="password" />
+                  <input type="password" id="password" required />
                 </div>
                 <div class="input-container">
                   <label for="confirm_password">Confirm Password</label>
-                  <input type="text" id="confirm_password" />
+                  <input type="password" id="confirm_password" required />
                 </div>
               </div>
             </div>
+        </div>
+        <!-- form container div -->
+            <div class="button-container">
+              <button type="submit" class="submit-button">Create Account</button>
+              <p>Already have an account? <a href="">Log In</a></p>
+            </div>
+            <!-- button container -->
           </form>
-        </div>
-        <div class="button-container">
-          <button class="button">Create Account</button>
-          <p>Already have an account? <a href="">Log In</a></p>
-        </div>
+          <!-- form element -->
       </div>
+      <!-- left and right div -->
     </div>
+    <!-- main div -->
   </body>
 </html>

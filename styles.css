@@ -97,9 +97,12 @@ body {
 
 input {
     font-size: 15px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 7px;
 }
 
-.button {
+.submit-button {
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 10px;
@@ -118,5 +121,14 @@ a {
     
 }
 
+.submit-button:hover {
+    background-color: green;
+}
 
+.submit-button:focus {
+    background-color: black;
+}
 
+input:focus {
+    box-shadow: 2px 3px 2px rgba(0,0,0,0.2);
+}
