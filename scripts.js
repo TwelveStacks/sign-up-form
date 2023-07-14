@@ -17,7 +17,13 @@ form.addEventListener('submit', (e) => {
 
     if (password.value !== confirm_password.value) {
         messages.push('Passwords do not match!')
-    }
+        password.style.border = "1px solid red";
+        confirm_password.style.border = "1px solid red";
+    } else if (password.value === '') {
+        password.style.border = "1px solid red";
+        confirm_password.style.border = "1px solid red";
+        messages.push('Please enter a password!')
+    } 
 
     if (messages.length > 0) {
         e.preventDefault()
